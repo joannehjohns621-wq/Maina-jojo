@@ -12,7 +12,7 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="wordmark" href="#home" aria-label="Joan's portfolio home">JM<span>.</span></a>
+    <a class="wordmark" href="#home" aria-label="Joan's portfolio home">Joan<span>.</span></a>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     <nav id="navigation" aria-label="Main navigation">
       <a href="#about">About</a>
@@ -37,12 +37,16 @@
       </div>
       <aside class="profile-card" aria-label="Profile photo and details">
         <div class="profile-frame">
-          <div class="profile-placeholder" id="profilePlaceholder">
-            <span class="profile-initials">JM</span>
-            <span class="placeholder-caption">Your photo goes here</span>
+          <div class="profile-art" id="profileArt" aria-live="polite">
+            <div class="profile-glow" aria-hidden="true"></div>
+            <span class="profile-monogram" id="profileMonogram">JM</span>
+            <span class="profile-label" id="profileLabel">Creative</span>
           </div>
           <img id="profileImage" class="profile-image" alt="Portrait of Joan Mwihaki Maina" hidden>
-          <label class="photo-button" for="photoInput">＋ Change photo</label>
+          <div class="profile-actions">
+            <button class="photo-button" id="randomizeProfileBtn" type="button">↻ Randomise</button>
+            <label class="photo-button secondary" for="photoInput">＋ Upload photo</label>
+          </div>
           <input id="photoInput" type="file" accept="image/*" hidden>
         </div>
         <div class="profile-caption">
@@ -52,7 +56,7 @@
           <span class="caption-label">FOCUS</span>
           <strong>AI training · Data annotation · Web design</strong>
         </div>
-        <p class="photo-tip">Choose a photo from your device. It previews in this browser; to keep it after closing the page, add your image file to the website folder.</p>
+        <p class="photo-tip">Swap the look with a random style or upload your own photo for a personal touch.</p>
       </aside>
       <div class="hero-decoration" aria-hidden="true">✳</div>
     </section>
@@ -143,7 +147,7 @@
     </section>
   </main>
 
-  <footer class="site-footer section-wrap"><a class="wordmark" href="#home">JM<span>.</span></a><p>Designed with care by Joan Mwihaki Maina.</p><a href="#home" class="back-top">Back to top ↑</a></footer>
+  <footer class="site-footer section-wrap"><a class="wordmark" href="#home">Joan<span>.</span></a><p>Designed with care by Joan Mwihaki Maina.</p><a href="#home" class="back-top">Back to top ↑</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
